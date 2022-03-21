@@ -1,0 +1,276 @@
+#header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 1em;
+  background-color: #fff;
+}
+
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica;
+}
+
+main {
+  margin-top: 250px;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
+
+header li {
+  list-style: none;
+  display: inline-block;
+  padding: 5px 20px;
+  white-space: nowrap;
+}
+
+header li:last-child {
+  margin-right: 40px;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px 50px;
+  box-shadow: 0 1px 8px #ddd;
+}
+
+header a {
+  text-decoration: none;
+  color: #555;
+  transition: all 0.3s ease 0s;
+}
+
+header a:hover {
+  color: rgb(134, 44, 2);
+}
+
+#header-img {
+  width: 400px;
+  height: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+#nav-bar {
+  margin-right: 40px;
+}
+
+main {
+  margin: auto;
+  margin-top: 120px;
+  width: 90%;
+}
+
+#getStarted {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  margin-top: 50px;
+}
+
+#getStarted > h2 {
+  margin-bottom: 20px;
+  word-wrap: break-word;
+}
+
+#getStarted input[type="email"] {
+  max-width: 275px;
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+#getStarted input[type="submit"],
+.product > button {
+  max-width: 150px;
+  width: 100%;
+  height: 30px;
+  margin: 15px 0;
+  border: 0;
+  background-color: #f1c40f;
+  font-size: large;
+  text-transform: uppercase;
+  border-radius: 2px;
+}
+
+#getStarted input[type="submit"]:hover,
+.product > button:hover {
+  background-color: orange;
+  transition: background-color 1s;
+  cursor: pointer;
+}
+
+.grid {
+  display: flex;
+}
+
+#features {
+  margin-top: 30px;
+}
+
+#features .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+  width: 20vw;
+  color: darkorange;
+}
+
+@media (max-width: 600px) {
+  #features .icon {
+    display: none;
+  }
+
+  main {
+    margin-top: 150px;
+  }
+
+  #features .desc {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    height: 150px;
+  }
+}
+
+#features .desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+  width: 80vw;
+  padding: 5px;
+}
+
+#howItWorks {
+  margin-top: 10%;
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+#howItWorks > iframe {
+  height: 350px;
+  width: 80%;
+}
+
+#pricing {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 7%;
+}
+
+.product {
+  margin-top: 9%;
+  margin-bottom: 3%;
+  border: 1px solid black;
+  width: calc(100% / 3);
+  height: auto;
+  margin: 20px;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.product > .level {
+  background-color: #ddd;
+  color: black;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.product > h2 {
+  margin-top: 15px;
+}
+
+.product > ol {
+  margin: 10px 0 20px 0;
+}
+
+.product > ol > li {
+  list-style: none;
+  padding: 5px 0;
+}
+
+footer {
+  background-color: #ddd;
+  margin: auto;
+  height: 70px;
+  width: 90%;
+}
+
+@media (max-width: 780px) {
+  #pricing {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product {
+    max-width: 300px;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  footer {
+    width: 100%;
+  }
+}
+
+footer li {
+  list-style: none;
+  display: inline-block;
+  padding-right: 5px;
+  white-space: nowrap;
+}
+
+/* Header */
+footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-shadow: 0 1px 8px #ddd;
+}
+
+footer a {
+  text-decoration: none;
+  color: #555;
+  transition: all 0.3s ease 0s;
+}
+
+footer a:hover {
+  color: rgb(134, 44, 2);
+}
+
+footer p {
+  color: #444;
+  font-size: small;
+  text-align: left;
+  margin-right: 10px;
+  line-height: 1.6;
+}
+
+footer ul {
+  text-align: center;
+}
